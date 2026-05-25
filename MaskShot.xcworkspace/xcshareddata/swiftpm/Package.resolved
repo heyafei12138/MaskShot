@@ -1,0 +1,24 @@
+{
+  "originHash" : "50e64cbb67c3f201978f3a9360597b3d119cdfd3fffefc0db5b355dd44c138e7",
+  "pins" : [
+    {
+      "identity" : "jkswiftextension",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JoanKing/JKSwiftExtension.git",
+      "state" : {
+        "revision" : "d0849b071ea3fc11a0ddaf083fd0ed7ed6bc77d2",
+        "version" : "2.9.0"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    }
+  ],
+  "version" : 3
+}

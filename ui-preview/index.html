@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MaskShot UI Preview</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="studio">
+      <aside class="studio-rail">
+        <div class="brand-row">
+          <div class="mark" aria-hidden="true"><i></i><i></i></div>
+          <div>
+            <p class="overline">UI direction</p>
+            <h1>MaskShot</h1>
+          </div>
+        </div>
+
+        <section class="direction visual-intro">
+          <div class="intro-art" aria-hidden="true">
+            <div class="intro-shot intro-back order-asset"></div>
+            <div class="intro-shot intro-mid code-asset"></div>
+            <div class="intro-shot intro-front chat-asset">
+              <span class="intro-mask m1"></span>
+              <span class="intro-mask m2"></span>
+            </div>
+            <span class="scan-beam"></span>
+            <span class="risk-frame rf1"></span>
+            <span class="risk-frame rf2"></span>
+          </div>
+          <div class="intro-copy">
+            <p class="kicker">Privacy utility</p>
+            <h2>Fast screenshot checks, with the image as the hero.</h2>
+            <p>
+              Review detected leaks on-device, apply secure blackout, and export a flattened screenshot in seconds.
+            </p>
+          </div>
+        </section>
+
+        <nav class="screen-nav" aria-label="Preview screens">
+          <button class="nav-item is-active" data-screen="home">
+            <span class="nav-dot"></span>
+            <span><b>Home</b><small>Recent screenshot</small></span>
+          </button>
+          <button class="nav-item" data-screen="editor">
+            <span class="nav-dot"></span>
+            <span><b>Editor</b><small>Confirm leaks</small></span>
+          </button>
+          <button class="nav-item" data-screen="paywall">
+            <span class="nav-dot"></span>
+            <span><b>Paywall</b><small>Lifetime Pro</small></span>
+          </button>
+          <button class="nav-item" data-screen="settings">
+            <span class="nav-dot"></span>
+            <span><b>Settings</b><small>Defaults</small></span>
+          </button>
+        </nav>
+
+        <div class="asset-strip" aria-label="Placeholder asset set">
+          <div class="asset-card chat-asset"><span></span><span></span><span></span></div>
+          <div class="asset-card order-asset"><span></span><span></span><span></span></div>
+          <div class="asset-card code-asset"><span></span><span></span><span></span></div>
+        </div>
+      </aside>
+
+      <section class="device-stage" aria-live="polite">
+        <div class="stage-halo" aria-hidden="true"></div>
+        <div class="phone">
+          <div class="phone-screen">
+            <span class="sensor"></span>
+
+            <section class="app-screen is-active" data-screen-panel="home">
+              <header class="topbar">
+                <div>
+                  <p class="overline">Today, 13:42</p>
+                  <h3>Latest Screenshot</h3>
+                </div>
+                <button class="icon-btn" aria-label="Settings">
+                  <span></span>
+                </button>
+              </header>
+
+              <div class="photo-hero">
+                <div class="placeholder-photo chat-photo">
+                  <div class="photo-toolbar"></div>
+                  <div class="bubble-row">
+                    <i class="portrait a"></i>
+                    <p>Can you check this shipping update?</p>
+                  </div>
+                  <div class="bubble-row right">
+                    <p>Alex Chen · +1 555 010 2024</p>
+                  </div>
+                  <div class="mask-preview one"></div>
+                  <div class="bubble-row">
+                    <i class="portrait b"></i>
+                    <p>alex@example.com</p>
+                  </div>
+                  <div class="mask-preview two"></div>
+                </div>
+                <div class="floating-result">
+                  <strong>6</strong>
+                  <span>possible items</span>
+                </div>
+              </div>
+
+              <section class="home-summary illustrated-summary">
+                <div class="summary-art" aria-hidden="true">
+                  <div class="summary-phone chat-asset"></div>
+                  <span class="summary-scan"></span>
+                  <span class="summary-lock"></span>
+                </div>
+                <div class="summary-copy">
+                  <p class="overline">Ready to check</p>
+                  <h4>On-device scan before you share.</h4>
+                  <p>Emails, phones, faces, QR codes, URLs, and long numbers stay on this device.</p>
+                </div>
+              </section>
+
+              <div class="sticky-actions">
+                <button class="primary-btn">Check Latest Screenshot</button>
+                <button class="quiet-btn">Choose Image</button>
+              </div>
+            </section>
+
+            <section class="app-screen" data-screen-panel="editor">
+              <header class="topbar editor-topbar">
+                <button class="icon-btn back" aria-label="Back"><span></span></button>
+                <div>
+                  <p class="overline">7 possible leaks</p>
+                  <h3>Review</h3>
+                </div>
+                <button class="icon-btn share" aria-label="Share"><span></span></button>
+              </header>
+
+              <div class="editor-canvas">
+                <div class="placeholder-photo document-photo">
+                  <div class="doc-avatar"></div>
+                  <div class="doc-line l1"></div>
+                  <div class="doc-line l2"></div>
+                  <div class="doc-line l3"></div>
+                  <div class="detect-box danger email"><em>Email</em></div>
+                  <div class="detect-box danger phone"><em>Phone</em></div>
+                  <div class="detect-box face"><em>Face</em></div>
+                  <div class="solid-mask"></div>
+                  <div class="qr-placeholder"></div>
+                  <div class="detect-box qr"><em>QR</em></div>
+                </div>
+              </div>
+
+              <section class="review-sheet">
+                <div class="sheet-grip"></div>
+                <div class="review-heading">
+                  <div>
+                    <h4>Selected for blackout</h4>
+                    <p>5 high-risk items will be flattened on export.</p>
+                  </div>
+                  <button>Select all</button>
+                </div>
+                <div class="risk-list">
+                  <span class="risk danger">Email</span>
+                  <span class="risk warm">Phone</span>
+                  <span class="risk blue">Face</span>
+                  <span class="risk violet">QR</span>
+                  <span class="risk cyan">URL</span>
+                </div>
+                <div class="editor-actions">
+                  <button class="quiet-btn">Manual</button>
+                  <button class="quiet-btn">Style</button>
+                  <button class="primary-btn">Redact Selected</button>
+                </div>
+              </section>
+            </section>
+
+            <section class="app-screen" data-screen-panel="paywall">
+              <header class="topbar editor-topbar">
+                <button class="icon-btn close" aria-label="Close"><span></span></button>
+                <div>
+                  <p class="overline">MaskShot Pro</p>
+                  <h3>Unlock</h3>
+                </div>
+                <span></span>
+              </header>
+
+              <div class="export-stack" aria-label="Protected screenshot examples">
+                <div class="export-card back-card order-asset"></div>
+                <div class="export-card mid-card code-asset"></div>
+                <div class="export-card front-card chat-asset">
+                  <div class="black-line a"></div>
+                  <div class="black-line b"></div>
+                </div>
+              </div>
+
+              <section class="paywall-panel">
+                <p class="overline">Lifetime access</p>
+                <h4>Mask screenshots without limits.</h4>
+                <p>Unlimited checks, all redaction styles, metadata removal, and future Pro features.</p>
+              </section>
+
+              <div class="benefit-list">
+                <div><span></span>Unlimited redactions</div>
+                <div><span></span>All secure styles</div>
+                <div><span></span>Remove metadata</div>
+              </div>
+
+              <div class="price-row">
+                <div><p>Launch price</p><small>Lifetime unlock</small></div>
+                <strong>$4.99</strong>
+              </div>
+
+              <div class="sticky-actions">
+                <button class="primary-btn">Unlock Lifetime Pro</button>
+                <button class="quiet-btn">Restore Purchase</button>
+              </div>
+            </section>
+
+            <section class="app-screen" data-screen-panel="settings">
+              <header class="topbar editor-topbar">
+                <button class="icon-btn back" aria-label="Back"><span></span></button>
+                <div>
+                  <p class="overline">Privacy defaults</p>
+                  <h3>Settings</h3>
+                </div>
+                <span></span>
+              </header>
+
+              <div class="settings-visual">
+                <div class="mini-safe">
+                  <div class="safe-photo order-asset"></div>
+                  <div class="safe-copy">
+                    <strong>Blackout</strong>
+                    <span>Default secure style</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="settings-list">
+                <section>
+                  <h4>Redaction</h4>
+                  <div class="row"><span>Default Style</span><b>Blackout</b></div>
+                  <div class="segmented">
+                    <button class="is-selected">Blackout</button>
+                    <button>Pixel</button>
+                    <button>Blur</button>
+                  </div>
+                </section>
+
+                <section>
+                  <h4>Privacy</h4>
+                  <div class="row">
+                    <span>Auto-load Latest Screenshot</span>
+                    <label class="toggle"><input type="checkbox" checked /><i></i></label>
+                  </div>
+                  <div class="row">
+                    <span>Remove Metadata on Export</span>
+                    <label class="toggle"><input type="checkbox" checked /><i></i></label>
+                  </div>
+                  <p class="note">No account. No upload. No image history.</p>
+                </section>
+
+                <section>
+                  <h4>Purchase</h4>
+                  <div class="row"><span>Free Uses Today</span><b>1 / 3</b></div>
+                  <button class="quiet-btn full-width">Restore Purchase</button>
+                </section>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

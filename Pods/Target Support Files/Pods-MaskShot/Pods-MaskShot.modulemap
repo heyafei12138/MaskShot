@@ -1,0 +1,6 @@
+framework module Pods_MaskShot {
+  umbrella header "Pods-MaskShot-umbrella.h"
+
+  export *
+  module * { export * }
+}
